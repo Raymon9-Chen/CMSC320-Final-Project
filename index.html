@@ -7581,13 +7581,14 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [34]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">scipy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sp</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">scipy</span>
 
 <span class="n">sv01_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'SV01ScarletAndVioletBaseSetProductsAndPrices.csv'</span><span class="p">)</span>
 <span class="n">sv02_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'SV02PaldeaEvolvedProductsAndPrices.csv'</span><span class="p">)</span>
@@ -7623,7 +7624,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [35]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">master_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">sv01_df</span><span class="p">,</span> <span class="n">sv02_df</span><span class="p">,</span> <span class="n">sv03_df</span><span class="p">,</span> <span class="n">sv04_df</span><span class="p">,</span> <span class="n">sv05_df</span><span class="p">,</span> <span class="n">sv06_df</span><span class="p">,</span> <span class="n">sv07_df</span><span class="p">,</span> <span class="n">sv08_df</span><span class="p">,</span> <span class="n">sv09_df</span><span class="p">,</span> <span class="n">sv_151_df</span><span class="p">,</span> <span class="n">sv_pf_df</span><span class="p">,</span> <span class="n">sv_sf_df</span><span class="p">,</span> <span class="n">sv_pe_df</span><span class="p">])</span>
@@ -7912,7 +7913,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [3]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [36]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">fill_market_price</span><span class="p">(</span><span class="n">row</span><span class="p">):</span>
@@ -7960,7 +7961,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [4]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [37]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">hr_df</span> <span class="o">=</span> <span class="n">master_df</span><span class="p">[</span><span class="n">master_df</span><span class="p">[</span><span class="s1">'extRarity'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'Hyper Rare'</span><span class="p">]</span>
@@ -7987,7 +7988,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [5]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [38]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># for Hyper Rare cards</span>
@@ -8019,8 +8020,10 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>/var/folders/jf/0fx_tc1j7q53x09tmy3ll_f80000gn/T/ipykernel_7738/553501463.py:9: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
-  hr_average_prices = pd.concat([hr_average_prices, pd.DataFrame([row])], ignore_index=True)
+<pre>/var/folders/jf/0fx_tc1j7q53x09tmy3ll_f80000gn/T/ipykernel_7738/553501463.py:9: FutureWarning:
+
+The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+
 </pre>
 </div>
 </div>
@@ -8208,7 +8211,7 @@ Comparison  Statistic  p-value  Lower CI  Upper CI
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># for Illustration Rare cards</span>
@@ -8240,8 +8243,10 @@ Comparison  Statistic  p-value  Lower CI  Upper CI
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>/var/folders/jf/0fx_tc1j7q53x09tmy3ll_f80000gn/T/ipykernel_7738/836959014.py:9: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
-  ir_average_prices = pd.concat([ir_average_prices, pd.DataFrame([row])], ignore_index=True)
+<pre>/var/folders/jf/0fx_tc1j7q53x09tmy3ll_f80000gn/T/ipykernel_7738/836959014.py:9: FutureWarning:
+
+The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+
 </pre>
 </div>
 </div>
@@ -8405,7 +8410,7 @@ Comparison  Statistic  p-value  Lower CI  Upper CI
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># for Special Illustration Rare cards</span>
@@ -8437,8 +8442,10 @@ Comparison  Statistic  p-value  Lower CI  Upper CI
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>/var/folders/jf/0fx_tc1j7q53x09tmy3ll_f80000gn/T/ipykernel_7738/2099931476.py:9: FutureWarning: The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
-  sir_average_prices = pd.concat([sir_average_prices, pd.DataFrame([row])], ignore_index=True)
+<pre>/var/folders/jf/0fx_tc1j7q53x09tmy3ll_f80000gn/T/ipykernel_7738/2099931476.py:9: FutureWarning:
+
+The behavior of DataFrame concatenation with empty or all-NA entries is deprecated. In a future version, this will no longer exclude empty or all-NA columns when determining the result dtypes. To retain the old behavior, exclude the relevant entries before the concat operation.
+
 </pre>
 </div>
 </div>
@@ -8639,7 +8646,7 @@ Comparison  Statistic  p-value  Lower CI  Upper CI
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">set_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'SVB'</span><span class="p">,</span>
@@ -8764,7 +8771,7 @@ Comparison  Statistic  p-value  Lower CI  Upper CI
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">sv01_price</span> <span class="o">=</span> <span class="n">sv01_df</span><span class="p">[</span><span class="n">sv01_df</span><span class="p">[</span><span class="s1">'name'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'Scarlet &amp; Violet Booster Pack'</span><span class="p">]</span>
@@ -8814,7 +8821,7 @@ Comparison  Statistic  p-value  Lower CI  Upper CI
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[42]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>PearsonRResult(statistic=np.float64(-0.6902804971814794), pvalue=np.float64(0.009011909812729983))</pre>
 </div>
@@ -8839,7 +8846,7 @@ Comparison  Statistic  p-value  Lower CI  Upper CI
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [43]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">prices</span><span class="p">[</span><span class="s1">'popularity'</span><span class="p">]</span>
@@ -8894,7 +8901,7 @@ Comparison  Statistic  p-value  Lower CI  Upper CI
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [44]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">scipy.stats</span><span class="w"> </span><span class="kn">import</span> <span class="n">ttest_ind</span>
@@ -8948,10 +8955,11 @@ The observed p-value of illustration rare cards versus special illustration rare
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [45]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">plotly.express</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plotly</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">plotly.io</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pio</span>
 
 <span class="n">fig_ttest</span> <span class="o">=</span> <span class="n">plotly</span><span class="o">.</span><span class="n">violin</span><span class="p">(</span>
     <span class="n">master_df</span><span class="p">,</span> 
@@ -8989,38 +8997,76 @@ The observed p-value of illustration rare cards versus special illustration rare
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [46]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">hyper_rare</span> <span class="o">=</span> <span class="n">master_df</span><span class="p">[</span><span class="n">master_df</span><span class="p">[</span><span class="s1">'extRarity'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'Hyper Rare'</span><span class="p">]</span>
+<span class="n">ir</span> <span class="o">=</span> <span class="n">master_df</span><span class="p">[</span><span class="n">master_df</span><span class="p">[</span><span class="s1">'extRarity'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'Illustration Rare'</span><span class="p">]</span>
+<span class="n">sir</span> <span class="o">=</span> <span class="n">master_df</span><span class="p">[</span><span class="n">master_df</span><span class="p">[</span><span class="s1">'extRarity'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'Special Illustration Rare'</span><span class="p">]</span>
+
+<span class="n">col</span> <span class="o">=</span> <span class="s2">"marketPrice"</span>
+
+<span class="n">rare_lower_pct</span> <span class="o">=</span> <span class="n">hyper_rare</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.05</span><span class="p">)</span>  
+<span class="n">rare_upper_pct</span> <span class="o">=</span> <span class="n">hyper_rare</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.95</span><span class="p">)</span>  
+
+<span class="n">ir_lower_pct</span> <span class="o">=</span> <span class="n">ir</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.05</span><span class="p">)</span>  
+<span class="n">ir_upper_pct</span> <span class="o">=</span> <span class="n">ir</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.95</span><span class="p">)</span>   
+
+<span class="n">sir_lower_pct</span> <span class="o">=</span> <span class="n">sir</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.05</span><span class="p">)</span>  
+<span class="n">sir_upper_pct</span> <span class="o">=</span> <span class="n">sir</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">quantile</span><span class="p">(</span><span class="mf">0.95</span><span class="p">)</span>   
+
+<span class="n">rare_pct</span> <span class="o">=</span> <span class="n">hyper_rare</span><span class="p">[(</span><span class="n">hyper_rare</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">rare_lower_pct</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">hyper_rare</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">rare_upper_pct</span><span class="p">)]</span>
+<span class="n">ir_pct</span> <span class="o">=</span> <span class="n">ir</span><span class="p">[(</span><span class="n">ir</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">ir_lower_pct</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">ir</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">ir_upper_pct</span><span class="p">)]</span>
+<span class="n">sir_pct</span> <span class="o">=</span> <span class="n">sir</span><span class="p">[(</span><span class="n">sir</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">sir_lower_pct</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">sir</span><span class="p">[</span><span class="n">col</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">sir_upper_pct</span><span class="p">)]</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [47]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">train_test_split</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">LabelEncoder</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.ensemble</span><span class="w"> </span><span class="kn">import</span> <span class="n">RandomForestClassifier</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">classification_report</span><span class="p">,</span> <span class="n">confusion_matrix</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.preprocessing</span><span class="w"> </span><span class="kn">import</span> <span class="n">LabelEncoder</span><span class="p">,</span> <span class="n">StandardScaler</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.neighbors</span><span class="w"> </span><span class="kn">import</span> <span class="n">KNeighborsClassifier</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.model_selection</span><span class="w"> </span><span class="kn">import</span> <span class="n">cross_val_predict</span><span class="p">,</span> <span class="n">StratifiedKFold</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.metrics</span><span class="w"> </span><span class="kn">import</span> <span class="n">classification_report</span><span class="p">,</span> <span class="n">confusion_matrix</span><span class="p">,</span> <span class="n">accuracy_score</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">sklearn.pipeline</span><span class="w"> </span><span class="kn">import</span> <span class="n">make_pipeline</span>
 
-<span class="n">x</span> <span class="o">=</span> <span class="n">master_df</span><span class="p">[[</span><span class="s1">'marketPrice'</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">master_df</span><span class="p">[</span><span class="s1">'extRarity'</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">model_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">rare_pct</span><span class="p">,</span> <span class="n">ir_pct</span><span class="p">,</span> <span class="n">sir_pct</span><span class="p">],</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="n">X</span> <span class="o">=</span> <span class="n">model_df</span><span class="p">[[</span><span class="s1">'marketPrice'</span><span class="p">]]</span><span class="o">.</span><span class="n">values</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">model_df</span><span class="p">[</span><span class="s1">'extRarity'</span><span class="p">]</span><span class="o">.</span><span class="n">values</span>
 
 <span class="n">le</span> <span class="o">=</span> <span class="n">LabelEncoder</span><span class="p">()</span>
 <span class="n">y_encoded</span> <span class="o">=</span> <span class="n">le</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 
-<span class="n">X_train</span><span class="p">,</span> <span class="n">X_test</span><span class="p">,</span> <span class="n">y_train</span><span class="p">,</span> <span class="n">y_test</span> <span class="o">=</span> <span class="n">train_test_split</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y_encoded</span><span class="p">,</span> <span class="n">test_size</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">,</span> <span class="n">stratify</span><span class="o">=</span><span class="n">y_encoded</span><span class="p">)</span>
-
-<span class="n">rf</span> <span class="o">=</span> <span class="n">RandomForestClassifier</span><span class="p">(</span>
-    <span class="n">n_estimators</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
-    <span class="n">max_depth</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
-    <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span>
+<span class="n">knn_pipeline</span> <span class="o">=</span> <span class="n">make_pipeline</span><span class="p">(</span>
+    <span class="n">StandardScaler</span><span class="p">(),</span>
+    <span class="n">KNeighborsClassifier</span><span class="p">(</span><span class="n">n_neighbors</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>  
 <span class="p">)</span>
-<span class="n">rf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">)</span>
 
-<span class="n">y_pred</span> <span class="o">=</span> <span class="n">rf</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_test</span><span class="p">)</span>
+<span class="n">skf</span> <span class="o">=</span> <span class="n">StratifiedKFold</span><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">42</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Classification Report:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">classification_report</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">target_names</span><span class="o">=</span><span class="n">le</span><span class="o">.</span><span class="n">classes_</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Confusion Matrix:</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span> <span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_test</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
+
+<span class="c1"># 5. Get LOO‑CV predictions</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">cross_val_predict</span><span class="p">(</span><span class="n">knn_pipeline</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">y_encoded</span><span class="p">,</span> <span class="n">cv</span><span class="o">=</span><span class="n">skf</span><span class="p">,</span> <span class="n">n_jobs</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1"># 6. Evaluate</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"LOO‑CV Accuracy: </span><span class="si">{</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y_encoded</span><span class="p">,</span><span class="w"> </span><span class="n">y_pred</span><span class="p">)</span><span class="si">:</span><span class="s2">.2%</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Classification Report:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_encoded</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">,</span> <span class="n">target_names</span><span class="o">=</span><span class="n">le</span><span class="o">.</span><span class="n">classes_</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Confusion Matrix:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">confusion_matrix</span><span class="p">(</span><span class="n">y_encoded</span><span class="p">,</span> <span class="n">y_pred</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -9033,39 +9079,23 @@ The observed p-value of illustration rare cards versus special illustration rare
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>Classification Report:
-                            precision    recall  f1-score   support
+<pre>LOO‑CV Accuracy: 67.68%
 
-               Hyper Rare       0.00      0.00      0.00        14
-        Illustration Rare       0.59      0.80      0.68        46
-Special Illustration Rare       0.62      0.55      0.58        29
+Classification Report:
+                           precision    recall  f1-score   support
 
-                 accuracy                           0.60        89
-                macro avg       0.40      0.45      0.42        89
-             weighted avg       0.50      0.60      0.54        89
+               Hyper Rare       0.45      0.15      0.23        60
+        Illustration Rare       0.65      0.87      0.75       207
+Special Illustration Rare       0.80      0.60      0.69       126
+
+                 accuracy                           0.68       393
+                macro avg       0.63      0.54      0.55       393
+             weighted avg       0.67      0.68      0.65       393
 
 Confusion Matrix:
- [[ 0 13  1]
- [ 0 37  9]
- [ 0 13 16]]
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>/Users/ivylu/CMSC320-Final-Project/.venv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning:
-
-Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-
-/Users/ivylu/CMSC320-Final-Project/.venv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning:
-
-Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-
-/Users/ivylu/CMSC320-Final-Project/.venv/lib/python3.13/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning:
-
-Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-
+[[  9  48   3]
+ [ 10 181  16]
+ [  1  49  76]]
 </pre>
 </div>
 </div>
